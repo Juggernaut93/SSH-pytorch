@@ -57,11 +57,6 @@ class SSHDetector():
             im_data = torch.from_numpy(im_data).to(self.device)
 
             batch_size = im_data.size()[0]
-            print(im_data)
-            print(im_info)
-            print(im_data.shape)
-            print(im_info.shape)
-            return
             ssh_rois = self.net(im_data, im_info)
 
             inds = (ssh_rois[:, :, 4] > self.thresh)
