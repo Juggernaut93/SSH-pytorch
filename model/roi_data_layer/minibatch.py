@@ -1,8 +1,8 @@
 import numpy as np
 import numpy.random as npr
 import cv2
-from model.utils.config import cfg
-from model.utils.blob import prep_im_for_blob, im_list_to_blob
+from SSH.model.utils.config import cfg
+from SSH.model.utils.blob import prep_im_for_blob, im_list_to_blob
 
 def get_minibatch(roidb):
     """Return the mini-batch for training"""

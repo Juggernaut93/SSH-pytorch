@@ -1,13 +1,13 @@
 import torch
-import model.network as net
+import SSH.model.network as net
 import torch.nn as nn
 import torch.nn.functional as F
-from model.utils.config import cfg
+from SSH.model.utils.config import cfg
 import math
 from torch.autograd import Variable
 import torchvision as tv
-from model.rpn.anchor_target_layer import _AnchorTargetLayer
-from model.rpn.proposal_layer import _Proposallayer
+from SSH.model.rpn.anchor_target_layer import _AnchorTargetLayer
+from SSH.model.rpn.proposal_layer import _Proposallayer
 import numpy as np
 
 

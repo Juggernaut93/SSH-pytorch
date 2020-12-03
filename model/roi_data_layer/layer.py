@@ -1,7 +1,7 @@
 import numpy as np
 import yaml
-from model.utils.config import cfg
-from model.roi_data_layer.minibatch import get_minibatch
+from SSH.model.utils.config import cfg
+from SSH.model.roi_data_layer.minibatch import get_minibatch
 
 class RoIDataLayer(object):
     def __init__(self, roidb, num_classes):

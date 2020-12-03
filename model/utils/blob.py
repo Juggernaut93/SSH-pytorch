@@ -10,7 +10,7 @@
 import cv2
 import numpy as np
 
-from model.utils.config import cfg
+from SSH.model.utils.config import cfg
 
 
 def im_list_to_blob(ims):

@@ -1,7 +1,7 @@
 
 import os
 import os.path as osp
-from model.utils.config import cfg
+from SSH.model.utils.config import cfg
 import numpy as np
 
 class imdb(object):

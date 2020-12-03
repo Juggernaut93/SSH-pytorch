@@ -1,4 +1,4 @@
-from model.dataset.wider import wider
+from .wider import wider
 
 __sets = {}
 

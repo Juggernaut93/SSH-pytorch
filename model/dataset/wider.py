@@ -7,8 +7,8 @@ import numpy as np
 import scipy.sparse
 from PIL import Image
 
-from model.utils.config import cfg
-from model.dataset.imdb import imdb
+from SSH.model.utils.config import cfg
+from SSH.model.dataset.imdb import imdb
 
 
 class wider(imdb):

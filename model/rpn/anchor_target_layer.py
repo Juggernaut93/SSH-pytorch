@@ -2,9 +2,9 @@ import torch
 import torch.nn as nn
 import numpy as np
 import numpy.random as npr
-from model.utils.bbox import bbox_overlaps_batch , bbox_transform_batch
-from  model.utils.config import cfg
-from model.rpn.generate_anchors import generate_anchors
+from SSH.model.utils.bbox import bbox_overlaps_batch , bbox_transform_batch
+from SSH.model.utils.config import cfg
+from SSH.model.rpn.generate_anchors import generate_anchors
 
 
 class _AnchorTargetLayer(nn.Module):

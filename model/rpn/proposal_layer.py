@@ -3,11 +3,11 @@ import torch.nn as nn
 import numpy as np
 import math
 import yaml
-from model.utils.config import cfg
+from SSH.model.utils.config import cfg
 
-from model.rpn.generate_anchors import generate_anchors
-from model.utils.bbox import bbox_transform_inv ,clip_boxes, clip_boxes_batch
-from model.nms.nms_wrapper import nms
+from SSH.model.rpn.generate_anchors import generate_anchors
+from SSH.model.utils.bbox import bbox_transform_inv ,clip_boxes, clip_boxes_batch
+from SSH.model.nms.nms_wrapper import nms
 
 
 

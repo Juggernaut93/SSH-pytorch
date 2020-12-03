@@ -8,10 +8,10 @@ import matplotlib
 
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-from model.utils.config import cfg
+from SSH.model.utils.config import cfg
 import numpy as np
 import cv2
-from model.utils.blob import im_list_to_blob
+from SSH.model.utils.blob import im_list_to_blob
 
 
 def _compute_scaling_factor(im_shape, target_size, max_size):

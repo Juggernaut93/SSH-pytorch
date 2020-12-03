@@ -5,9 +5,9 @@
 # Written by Ross Girshick
 # --------------------------------------------------------
 
-from model.utils.config import cfg
-from model.nms.cpu_nms import cpu_nms
-from model.nms.gpu_nms import gpu_nms
+from SSH.model.utils.config import cfg
+from SSH.model.nms.cpu_nms import cpu_nms
+from SSH.model.nms.gpu_nms import gpu_nms
 
 
 def nms(dets, thresh, force_cpu=False):
