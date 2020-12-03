@@ -74,6 +74,7 @@ class SSHDetector():
                 nms_keep = nms(ssh_roi_single, cfg.TEST.RPN_NMS_THRESH)
                 cls_dets_single = ssh_roi_single[nms_keep, :]
                 ret.append(cls_dets_single)
+            return ret
 
 if __name__ == '__main__':
     arg = parser()
