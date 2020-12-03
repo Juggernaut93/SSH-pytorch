@@ -66,7 +66,6 @@ class SSHDetector():
             ssh_roi_keep = ssh_rois[:, inds[0], :]
             # unscale back
             ssh_roi_keep[:, :, 0:4] /= im_scale
-            print(ssh_roi_keep)
 
             ret = []
             for i in range(batch_size):
@@ -74,7 +73,7 @@ class SSHDetector():
                 nms_keep = nms(ssh_roi_single, cfg.TEST.RPN_NMS_THRESH)
                 cls_dets_single = ssh_roi_single[nms_keep, :]
                 ret.append(cls_dets_single)
-            return ret
+            return np.concatenate(ret)
 
 if __name__ == '__main__':
     arg = parser()
