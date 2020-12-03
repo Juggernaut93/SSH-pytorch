@@ -10,3 +10,9 @@ check_point/*
 data/*
 !data/.gitignore
 .idea/
+.ipynb_checkpoints/
+*.so
+build/
+dist/
+SSH_pytorch.egg-info/
+
